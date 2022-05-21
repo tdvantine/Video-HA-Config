@@ -1,0 +1,46 @@
+- platform: mqtt # "video-rack-humidity"
+  state_topic: "VideoRacks/Enviros"
+  value_template: "{{ value_json.humidity }}"
+  name: "video-rack-humidity"
+  unit_of_measurement: '%'
+  icon: "mdi:water-percent"
+  
+- platform: mqtt # "video-rack-pressure"
+  state_topic: "VideoRacks/Enviros"
+  value_template: "{{ value_json.pressure }}"
+  name: "video-rack-pressure"
+  unit_of_measurement: 'hPa'
+  icon: "mdi:arrow-down-bold"
+
+- platform: mqtt # "video-rack-temperature"
+  state_topic: "VideoRacks/Enviros"
+  value_template: "{{ value_json.temperature }}"
+  name: "video-rack-temperature"
+  unit_of_measurement: 'F'
+  icon: "mdi:thermometer"
+  
+- platform: mqtt # "video-rack-lux"
+  state_topic: "VideoRacks/Enviros"
+  value_template: "{{ value_json.lux }}"
+  name: "video-rack-lux"
+  unit_of_measurement: 'lx'
+  icon: "mdi:weather-sunny"
+  
+- platform: command_line
+  name: CPU Temperature
+  command: "cat /sys/class/thermal/thermal_zone0/temp"
+  unit_of_measurement: "°C"
+  value_template: '{{ value | multiply(0.001) | round(1) }}'
+  scan_interval: 10
+  
+- platform: rest #Shit to Get Done List (Video)
+  name: Shit to Get Done
+  method: GET
+  resource: 'https://api.todoist.com/sync/v8/projects/get_data'
+  params:
+    token: !secret todoist_api_token
+    project_id: 2291585133
+  value_template: '{{value_json[''project''][''id'']}}'
+  json_attributes:
+    - items
+  scan_interval: 30

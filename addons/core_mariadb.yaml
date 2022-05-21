@@ -1,0 +1,8 @@
+databases:
+- homeassistant
+logins:
+- password: '!secret mariadb_pass'
+  username: homeassistant
+rights:
+- database: homeassistant
+  username: homeassistant

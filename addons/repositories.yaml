@@ -1,0 +1,28 @@
+ArgonOne Active Cooling:
+  maintainer: Adam Outler <adamoutler@adamoutler.com>
+  slug: 7d06b5a0
+  source: https://github.com/adamoutler/HassOSArgonOneAddon
+ESPHome:
+  maintainer: ESPHome <esphome@nabucasa.com>
+  slug: 5c53de3b
+  source: https://github.com/esphome/home-assistant-addon
+HassOS Configurator:
+  maintainer: Adam Outler <adamoutler@adamoutler.com>
+  slug: 1f3d020e
+  source: https://github.com/adamoutler/HassOSConfigurator
+Home Assistant Community Add-ons:
+  maintainer: Franck Nijhof <frenck@addons.community>
+  slug: a0d7b954
+  source: https://github.com/hassio-addons/repository
+Local add-ons:
+  maintainer: you
+  slug: local
+  source: local
+Official add-ons:
+  maintainer: Home Assistant
+  slug: core
+  source: core
+Poeschl Home Assistant Add-ons:
+  maintainer: Poeschl <Poeschl@users.noreply.github.com>
+  slug: 243ffc37
+  source: https://github.com/Poeschl/Hassio-Addons

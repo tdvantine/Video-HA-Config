@@ -1,0 +1,13 @@
+items:
+- id: lovelace_test
+  mode: storage
+  require_admin: true
+  show_in_sidebar: true
+  title: Test
+  url_path: lovelace-test
+- id: lovelace_templates
+  mode: storage
+  require_admin: true
+  show_in_sidebar: true
+  title: templates
+  url_path: lovelace-templates

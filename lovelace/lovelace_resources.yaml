@@ -1,0 +1,10 @@
+items:
+- id: ac76e8b1d8f2443c990a610c815fa5df
+  type: module
+  url: /hacsfiles/lovelace-card-mod/card-mod.js?hacstag=190927524314
+- id: 7236d09b63c0479babef1f1c9a9b53bf
+  type: module
+  url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js?hacstag=1512800620110
+- id: 6be154e0bb504c7aa4411d28a7f6e34a
+  type: module
+  url: /hacsfiles/todoist-card/todoist-card.js?hacstag=335713085108

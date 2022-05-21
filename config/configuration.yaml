@@ -1,0 +1,33 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+sensor: !include sensors.yaml
+
+google_domains:
+  domain: k-p.video
+  username: !secret k-p_v_user
+  password: !secret k-p_v_pass
+  
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - !secret proxy_ip
+
+rest_command:
+  todoist:
+    method: post
+    url: 'https://api.todoist.com/sync/v8/sync'
+    payload: !secret todoist_api_payload
+    content_type: 'application/x-www-form-urlencoded'
+    
+spotify:
+  client_id: !secret spotify_client_id
+  client_secret: !secret spotify_client_secret
