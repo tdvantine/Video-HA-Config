@@ -17,5 +17,5 @@ HomeassistantOS backup for the Video Dept. I manage
 * [Terminal & SSH](https://github.com/home-assistant/addons/tree/master/ssh)
 * [Zigbe2mqtt](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
 
-## Intergrations
+# Intergrations
 
