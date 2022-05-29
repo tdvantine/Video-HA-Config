@@ -3,15 +3,19 @@
 HomeassistantOS backup for the Video Dept. I manage
 
 # Add-Ons Used
-* ESPHome
-* File Editor
-* Home Assistant Git Exporter
-* InfluxDB
-* MariaDB
-* Mosquitto Broker
-* NGINX Home Assistant SSL proxy
-* Nginx Proxy Manager
-* pigpio
-* Samba share
-* Terminal & SSH
-* Zigbee2mqtt [![Zigbe2mqtt](https://img.shields.io/badge/Github-Zigbe2mqtt-yellow)](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
+
+* [ESPHome](https://esphome.io/)
+* [File Editor](https://github.com/home-assistant/hassio-addons/tree/master/configurator)
+* [Home Assistant Git Exporter](https://github.com/Poeschl/Hassio-Addons/tree/master/git-exporter)
+* [InfluxDB](https://github.com/hassio-addons/addon-influxdb)
+* [MariaDB](https://github.com/home-assistant/hassio-addons/tree/master/mariadb)
+* [Mosquitto Broker](https://github.com/home-assistant/hassio-addons/tree/master/mosquitto)
+* [NGINX Home Assistant SSL proxy](https://github.com/home-assistant/hassio-addons/tree/master/nginx_proxy)
+* [Nginx Proxy Manager](https://github.com/hassio-addons/addon-nginx-proxy-manager)
+* [pigpio](https://github.com/Poeschl/Hassio-Addons/tree/master/pigpio)
+* [Samba share](https://github.com/home-assistant/hassio-addons/tree/master/samba)
+* [Terminal & SSH](https://github.com/home-assistant/addons/tree/master/ssh)
+* [Zigbe2mqtt](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
+
+## Intergrations
+
