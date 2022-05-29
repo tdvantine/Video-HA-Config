@@ -8,3 +8,21 @@ items:
 - id: 6be154e0bb504c7aa4411d28a7f6e34a
   type: module
   url: /hacsfiles/todoist-card/todoist-card.js?hacstag=335713085108
+- id: 416a04829e974d6a84c1cf9e1c7782e8
+  type: module
+  url: /local/manual/kiosk-mode/kiosk-mode.js
+- id: b84887f38be24cf9b0d1fdef37225787
+  type: module
+  url: /hacsfiles/vertical-stack-in-card/vertical-stack-in-card.js?hacstag=142051833042
+- id: 55aafe56861a453582b9d5ce46819006
+  type: module
+  url: /hacsfiles/lovelace-mushroom/mushroom.js?hacstag=444350375188
+- id: 3a64834c1f1943fc8159ef1d605312b1
+  type: module
+  url: /hacsfiles/button-card/button-card.js?hacstag=146194325342
+- id: 15318b58761a4fc9b974aa690ddccef2
+  type: module
+  url: /hacsfiles/atomic-calendar-revive/atomic-calendar-revive.js?hacstag=246549747620
+- id: ac0c1089110143f2ba8dd0dfb756ba90
+  type: module
+  url: /hacsfiles/lovelace-layout-card/layout-card.js?hacstag=156434866242

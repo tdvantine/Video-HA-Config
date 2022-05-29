@@ -1,0 +1,6 @@
+auth: true
+certfile: fullchain.pem
+envvars: []
+keyfile: privkey.pem
+reporting: true
+ssl: true

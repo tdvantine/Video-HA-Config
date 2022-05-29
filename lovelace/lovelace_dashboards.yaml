@@ -5,9 +5,10 @@ items:
   show_in_sidebar: true
   title: Test
   url_path: lovelace-test
-- id: lovelace_templates
+- icon: mdi:projector
+  id: video_dashboard
   mode: storage
-  require_admin: true
+  require_admin: false
   show_in_sidebar: true
-  title: templates
-  url_path: lovelace-templates
+  title: Video Dashboard
+  url_path: video-dashboard

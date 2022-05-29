@@ -10,6 +10,10 @@ HassOS Configurator:
   maintainer: Adam Outler <adamoutler@adamoutler.com>
   slug: 1f3d020e
   source: https://github.com/adamoutler/HassOSConfigurator
+'Home Assistant Add-on: Zigbee2mqtt':
+  maintainer: Daniel Welch <dwelch2102@gmail.com>
+  slug: 45df7312
+  source: https://github.com/zigbee2mqtt/hassio-zigbee2mqtt
 Home Assistant Community Add-ons:
   maintainer: Franck Nijhof <frenck@addons.community>
   slug: a0d7b954

@@ -3,5 +3,7 @@ customize:
   active: false
   folder: mosquitto
 keyfile: privkey.pem
-logins: []
+logins:
+- password: '!secret mqtt_p'
+  username: '!secret mqtt_u'
 require_certificate: false

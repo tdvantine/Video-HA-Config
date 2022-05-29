@@ -1,6 +1,6 @@
 check:
   check_for_ips: true
-  check_for_secrets: true
+  check_for_secrets: false
   enabled: true
 dry_run: false
 exclude:
@@ -19,7 +19,7 @@ export:
   node_red: false
 repository:
   branch_name: main
-  commit_message: Home Assistant Git Exporter
+  commit_message: Added ZigBee and cleaned up !secret entries
   password: '!secret git_pass'
   pull_before_push: true
   url: https://github.com/tdvantine/Video-HA-Config.git

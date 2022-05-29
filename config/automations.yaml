@@ -1,1 +1,96 @@
-[]
+- id: '1653165393098'
+  alias: Update Weather /15
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /15
+  condition: []
+  action:
+  - service: homeassistant.update_entity
+    data: {}
+    target:
+      entity_id: sensor.pirateweather_api
+  mode: single
+- id: '1653264143048'
+  alias: Update Tristans Time Zone
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.tristans_s21_current_time_zone
+    attribute: time_zone_id
+  condition: []
+  action:
+  - service: homeassistant.update_entity
+    data: {}
+    target:
+      entity_id: sensor.tristans_datetime
+  mode: single
+- id: '1653530730526'
+  alias: KP006 - Button HoD LED
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 858f8dd530d00a4675a9829934b32e5e
+    type: action
+    subtype: 'on'
+    discovery_id: 0xb4e3f9fffe7569c4 action_on
+  condition: []
+  action:
+  - type: toggle
+    device_id: f0752dd7e72d4b3e4def8bf837cfd6c0
+    entity_id: light.hod_led
+    domain: light
+  mode: single
+- id: '1653532042259'
+  alias: KP067 - Knob - HoD Speaker Volume Up
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 89df0b10b72f74aef37f33643007394b
+    type: action
+    subtype: rotate_right
+    discovery_id: 0x5c0272fffe40a9c7 action_rotate_right
+  condition: []
+  action:
+  - service: media_player.volume_up
+    data: {}
+    target:
+      entity_id: media_player.hod
+  mode: single
+- id: '1653532688258'
+  alias: KP067 - Knob - HoD Speaker Volume Down
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 89df0b10b72f74aef37f33643007394b
+    type: action
+    subtype: rotate_left
+    discovery_id: 0x5c0272fffe40a9c7 action_rotate_left
+  condition: []
+  action:
+  - service: media_player.volume_down
+    data: {}
+    target:
+      entity_id: media_player.hod
+  mode: single
+- id: '1653533156476'
+  alias: KP067 - Knob - HoD Speaker Play/Pause
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 89df0b10b72f74aef37f33643007394b
+    type: action
+    subtype: play_pause
+    discovery_id: 0x5c0272fffe40a9c7 action_play_pause
+  condition: []
+  action:
+  - service: media_player.media_play_pause
+    data: {}
+    target:
+      entity_id: media_player.hod
+  mode: single

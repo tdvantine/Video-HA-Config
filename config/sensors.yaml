@@ -44,3 +44,48 @@
   json_attributes:
     - items
   scan_interval: 30
+
+- platform: command_line # Tristan's DateTime
+  name: Tristans DateTime
+  command: >-
+    python3 t-tz.py "{{ state_attr('sensor.tristans_s21_current_time_zone', 'time_zone_id') }}"
+  value_template: "{{ value_json.datetime }}"
+  json_attributes:
+    - timezone
+
+# - platform: rest
+#   name: PW_test
+#   scan_interval: 15
+#   resource: !secret pirate_rest_resource
+#   value_template: "{{ float(value_json.daily.data.0.precipAccumulation) }}"
+#   unit_of_measurement: "cm"
+  
+# - platform: pirateweather
+#   api_key: !secret pirate_weather_api
+#   scan_interval: '00:15:00'
+#   monitored_conditions:
+#     - temperature
+#     - precip_probability
+#     - precip_type
+#     - humidity
+#     - cloud_cover
+#     - nearest_storm_distance
+#     - precip_intensity
+#     - wind_speed
+
+- platform: rest
+  resource_template: !secret pirate_rest_resource
+  json_attributes_path: "$.currently"
+  scan_interval: '00:15:00'
+  json_attributes:
+    - summary
+    - temperature
+    - precipProbability
+    - precipType
+    - humidity
+    - cloudCover
+    - nearestStormDistance
+    - precipIntensity
+    - windSpeed
+  name: pirateweather_api_test
+  value_template: 'OK'

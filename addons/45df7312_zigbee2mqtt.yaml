@@ -1,0 +1,16 @@
+data_path: /config/zigbee2mqtt
+frontend: true
+mqtt:
+  base_topic: zigbee2mqtt
+  password: '!secret mqtt_p'
+  server: mqtt://core-mosquitto
+  user: '!secret mqtt_u'
+serial:
+  port: /dev/serial/by-id/usb-ITead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_7c20c523ed12ec11ba4720c7bd930c07-if00-port0
+socat:
+  enabled: false
+  log: false
+  master: pty,raw,echo=0,link=/tmp/ttyZ2M,mode=777
+  options: -d -d
+  slave: tcp-listen:8485,keepalive,nodelay,reuseaddr,keepidle=1,keepintvl=1,keepcnt=5
+zigbee_herdsman_debug: false

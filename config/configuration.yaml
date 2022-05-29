@@ -6,6 +6,9 @@ default_config:
 tts:
   - platform: google_translate
 
+frontend: 
+  themes: !include_dir_merge_named themes
+
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
@@ -15,6 +18,10 @@ google_domains:
   domain: k-p.video
   username: !secret k-p_v_user
   password: !secret k-p_v_pass
+
+google:
+  client_id: !secret google_client
+  client_secret: !secret google_secret
   
 http:
   use_x_forwarded_for: true
@@ -31,3 +38,23 @@ rest_command:
 spotify:
   client_id: !secret spotify_client_id
   client_secret: !secret spotify_client_secret
+
+  
+# weather:
+#   - platform: pirateweather
+#     api_key: !secret pirate_weather_api
+#      scan_interval: 15
+#     # Additional optional values:
+#     latitude: {{ state_attr('person.tristan_van_tine', 'latitude') }}
+#     longitude: {{ state_attr('person.tristan_van_tine', 'longitude') }}
+
+#     mode: "daily"
+#     name: PirateWeather
+
+# weather:
+#   - platform: template
+#     name: "Dynamic Weather"
+#     condition_template: "{{ states_attr('sensor.pirateweather_api, 'summary') }}"
+#     temperature_template: "{{ states_attr('sensor.temperature', 'temperature') | float }}"
+#     humidity_template: "{{ states_attr('sensor.humidity', 'humidity') | float }}"
+#     # forecast_template: "{{ state_attr('weather.my_region', 'forecast') }}"

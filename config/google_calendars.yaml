@@ -1,0 +1,49 @@
+
+- cal_id: family14757305141829988940@group.calendar.google.com
+  entities:
+  - device_id: family
+    ignore_availability: true
+    name: Family
+    track: true
+
+- cal_id: en.usa#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_united_states
+    ignore_availability: true
+    name: Holidays in United States
+    track: true
+
+- cal_id: hltmeosrul86l71lda8lccs3d8@group.calendar.google.com
+  entities:
+  - device_id: davis_van_tine
+    ignore_availability: true
+    name: Davis-Van Tine
+    track: true
+
+- cal_id: nktcf5nl6bl1dq9fla11bba6uo@group.calendar.google.com
+  entities:
+  - device_id: matthew_s_schedule
+    ignore_availability: true
+    name: Matthew's Schedule
+    track: true
+
+- cal_id: kd5hd8oj6p7ihs5jj3fvdjg6m8@group.calendar.google.com
+  entities:
+  - device_id: d34b_frozen
+    ignore_availability: true
+    name: D34B - Frozen
+    track: true
+
+- cal_id: t234111@gmail.com
+  entities:
+  - device_id: tristan_s_calendar
+    ignore_availability: true
+    name: Tristan's Calendar
+    track: true
+
+- cal_id: 0mdakf3vuc101n5ahq51buqneg@group.calendar.google.com
+  entities:
+  - device_id: meal_plans
+    ignore_availability: true
+    name: Meal Plans
+    track: true

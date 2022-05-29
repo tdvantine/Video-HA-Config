@@ -1,0 +1,18 @@
+{
+    "0xb4e3f9fffe7569c4": {
+        "battery": 100,
+        "update": {
+            "state": "available"
+        },
+        "update_available": true
+    },
+    "0x5c0272fffe40a9c7": {
+        "battery": 100,
+        "rate": 195,
+        "brightness": 238,
+        "update": {
+            "state": "available"
+        },
+        "update_available": true
+    }
+}

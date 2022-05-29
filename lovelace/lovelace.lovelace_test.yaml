@@ -1,0 +1,19 @@
+config:
+  views:
+  - cards:
+    - entities:
+      - entity: sensor.pirateweather_api_test
+        name: 'pirateweather_api_test - Last Updated '
+        secondary_info: last-updated
+      type: entities
+    - icon: mdi:close-octagon
+      name: '!! SHUTDOWN !!'
+      show_icon: true
+      show_name: true
+      tap_action:
+        action: call-service
+        service: hassio.host_shutdown
+        service_data: {}
+        target: {}
+      type: button
+    title: Home
